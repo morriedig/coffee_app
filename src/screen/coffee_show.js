@@ -12,10 +12,12 @@ export default class loading extends React.Component{
   }
 
   getCoffeeDate(){
-    fetch("http://localhost:3000/").then(function(response){
+    fetch("http://localhost:3000/api/v1/coffees").then(function(response){
+      console.log("+++++++++++++++++=");
       return response.json();
     }).then(function(data){
       console.log(data);
+      console.log("++++++++++-----------------+++++++=");
     })
   }
 

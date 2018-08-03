@@ -12,7 +12,7 @@ export default class loading extends React.Component{
   }
 
   getCoffeeDate(){
-    fetch("http://localhost:3000/").then(function(response){
+    fetch("http://localhost:3000/api/v1/show").then(function(response){
       return response.json();
     }).then(function(data){
       console.log(data);
@@ -22,7 +22,7 @@ export default class loading extends React.Component{
   render(){
     return(
       <View>
-        <Text>loading</Text>
+        <Text>loading！！！</Text>
       </View>
     )
   }
